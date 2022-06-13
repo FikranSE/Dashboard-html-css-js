@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Mahasiswa</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+</head>
+
+<body>
+    <section>
+        <header>
+            <div class="toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Search..">
+                <button class="btn-search">Search</button>
+            </div>
+
+        </header>
+        <aside>
+            <div class="menu">
+                <ul>
+                    <li><i class="bi bi-house-door-fill"></i><a href="#">Dashboard</a></li>
+                    <li><i class="bi bi-person-fill"></i><a href="#">Profil</a></li>
+                    <li><i class="bi bi-people-fill"></i><a href="#">Participant</a></li>
+                    <li><i class="bi bi-card-checklist"></i><a href="#">KRS</a></li>
+                    <li><i class="bi bi-card-list"></i><a href="#">KHS</a></li>
+                </ul>
+            </div>
+            <div class="logout">
+                <ul>
+                    <li><i class="bi bi-box-arrow-left"></i><a href="#">Logout</a></li>
+                </ul>
+            </div>
+        </aside>
+        <main>
+            <div class="container-main">
+                <div class="info-fakultas">
+                    <div class="info-fak">
+                        <div class="judul">
+                            <i class="bi bi-calculator"></i>
+                            <h3>Jumlah Mahasiswa</h3>
+                        </div>
+                        <div class="angka">
+                            <h1>600</h1>
+                        </div>
+                    </div>
+                    <div class="info-fak">
+                        <div class="judul">
+                            <i class="bi bi-calculator"></i>
+                            <h3>Jumlah Mata Kuliah</h3>
+                        </div>
+                        <div class="angka">
+                            <h1>9</h1>
+                        </div>
+                    </div>
+                    <div class="info-fak">
+                        <div class="judul">
+                            <i class="bi bi-calculator"></i>
+                            <h3>Jumlah SKS</h3>
+                        </div>
+                        <div class="angka">
+                            <h1>24</h1>
+                        </div>
+                    </div>
+                    <div class="info-fak">
+                        <div class="judul">
+                            <i class="bi bi-calculator"></i>
+                            <h3>Jumlah Dosen</h3>
+                        </div>
+                        <div class="angka">
+                            <h1>30</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="akreditasi-bx">
+                    <div class="info-akreditasi">
+                        <div class="judul">
+                            <h3>AKREDITASI JURUSAN</h3>
+                        </div>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt id praesentium pariatur!</p>
+                        <div class="btn">
+                            <div>
+                                <button class="btn-1">SURAT KETERANGAN</button>
+                            </div>
+                            <div>
+                                <button class="btn-2">SERTIFIKAT</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gambar-akreditasi">
+                        <img src="img/akre.png" width="200">
+                    </div>
+                </div>
+                <div class="tabel-mhs">
+                    <div class="judul">
+                        <h3>DATA MAHASISWA</h3>
+                    </div>
+                    <table cellspacing="0">
+                        <tr>
+                            <th>NO</th>
+                            <th>NAMA</th>
+                            <th>NIM</th>
+                            <th>EMAIL</th>
+                            <th>STATUS</th>
+                        </tr>
+                        
+                        <tr>
+                            <td>1</td>
+                            <td>
+                                <img src="img/fikran.jpg" width="45" height="45"
+                                    style="object-fit:cover; border-radius:50px;">
+                                <a href="#">Fikran shadiq elyafit</a>
+                            </td>
+                            <td>2111521020</td>
+                            <td>fikran456@gmail.com</td>
+                            <td>Student</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>
+                                <img src="img/fikran.jpg" width="45" height="45"
+                                    style="object-fit:cover; border-radius:50px;">
+                                <a href="#">Muhammad afif</a>
+                            </td>
+                            <td>2116781020</td>
+                            <td>afif098@gmail.com</td>
+                            <td>Student</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>
+                                <img src="img/azura.jpg" width="45" height="45"
+                                    style="object-fit:cover; border-radius:50px;">
+                                <a href="#">Azzura mayuri</a>
+                            </td>
+                            <td>2111512320</td>
+                            <td>azura111@gmail.com</td>
+                            <td>Student</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>
+                                <img src="img/zahra.jpg" width="45" height="45"
+                                    style="object-fit:cover; border-radius:50px;">
+                                <a href="#">Zahra Malika</a>
+                            </td>
+                            <td>2111000020</td>
+                            <td>zahra121@gmail.com</td>
+                            <td>Student</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </main>
+    </section>
+</body>
+<script>
+const toggle = document.querySelector('.toggle');
+const menu = document.querySelector('.menu');
+const logout = document.querySelector('.logout');
+const sidebar = document.querySelector('aside');
+const main = document.querySelector('main');
+toggle.addEventListener('click', () => {
+    toggle.classList.toggle('toggle-js');
+    menu.classList.toggle('menu-js');
+    logout.classList.toggle('logout-js');
+    sidebar.classList.toggle('aside-js');
+    main.classList.toggle('main-js');
+})
+</script>
+
+</html>
